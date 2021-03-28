@@ -21,6 +21,7 @@ title: Eat with mom
     <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
     <meta name="theme-color" content="#ffffff">
+    {% include analytics.html %}
     <!-- Page loading styles-->
     <style>
       .page-loading {
@@ -146,40 +147,7 @@ title: Eat with mom
           </div>
         </div>
       </div>
-      <!-- Navbar (Solid background + shadow)-->
-      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-      <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
-        <div class="navbar-search bg-light">
-          <div class="container d-flex flex-nowrap align-items-center"><i class="ai-search fs-xl"></i>
-            <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="Search site">
-            <div class="d-flex align-items-center"><span class="text-muted fs-xs mt-1 d-none d-sm-inline">Close</span>
-              <button class="btn-close p-2" type="button" data-bs-toggle="search"></button>
-            </div>
-          </div>
-        </div>
-        <div class="container px-0 px-xl-3">
-          <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><span>Eat with mom</span></a>
-          <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a class="btn btn-info d-lg-inline-block d-none" href="#modal-contact" data-bs-toggle="modal">Share a recipe</a><a class="btn btn-sm btn-info d-lg-none d-inline-block" href="#modal-contact" data-bs-toggle="modal">Share a recipe</a></div>
-          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
-            <div class="offcanvas-cap navbar-shadow">
-              <h5 class="mt-1 mb-0">Menu</h5>
-              <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Menu-->
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="/" >Home</a>
-                </li>
-                <li class="nav-item"><a class="nav-link active" href="/recipes" >Recipes</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/about" >About</a>
-                </li>
-              </ul>
-            </div>
-            <div class="offcanvas-cap"><a class="btn d-block w-100 btn-info" href="#modal-contact" data-bs-toggle="modal">Share a recipe</a></div>
-          </div>
-        </div>
-      </header>
+      {% include navigation.html %}
       <!-- Page content-->
       </section>
       <!-- Posts with sidebar right-->
