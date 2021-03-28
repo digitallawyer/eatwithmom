@@ -217,6 +217,7 @@
                 </div>
               </div>
               <!-- Post content-->
+              <img src="{{site.baseurl}}/assets/img/posts/{{ page.image }}">
               <p class="py-3">{{ content }} </p>
               <!-- Tags + Sharing-->
               <div class="row g-0 position-relative align-items-center border-top border-bottom my-5">
@@ -244,64 +245,7 @@
                     </div>
                     <div class="entry-nav-thumb flex-shrink-0 d-none d-sm-block"><img class="rounded" src="img/blog/th05.jpg" alt="Post thumbnail"></div>
                   </div></a></nav>
-              <!-- Comments-->
-              <div class="pb-4 mb-5" id="comments">
-                <h2 class="h3 pb-4">3 Comments</h2>
-                <div class="comment">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat cumque nihil impedit quo minus. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="img/blog/comments/01.jpg" alt="Barbara Palson" width="42">
-                      <div class="ps-2 ms-1">
-                        <h4 class="fs-sm mb-0">Barbara Palson</h4><span class="fs-xs text-muted">3 days ago</span>
-                      </div>
-                    </div><a class="btn btn-outline-primary btn-sm" href="#"><i class="ai-corner-up-left fs-base me-2 ms-n1"></i>Reply</a>
-                  </div>
-                  <div class="comment">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat cumque nihil impedit quo minus. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="img/blog/comments/02.jpg" alt="Daniel Adams" width="42">
-                      <div class="ps-2 ms-1">
-                        <h4 class="fs-sm mb-0">Daniel Adams</h4><span class="fs-xs text-muted">2 days ago</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment">
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center"><img class="rounded-circle" src="img/blog/comments/03.jpg" alt="Tim Brooks" width="42">
-                      <div class="ps-2 ms-1">
-                        <h4 class="fs-sm mb-0">Tim Brooks</h4><span class="fs-xs text-muted">1 week ago</span>
-                      </div>
-                    </div><a class="btn btn-outline-primary btn-sm" href="#"><i class="ai-corner-up-left fs-base me-2 ms-n1"></i>Reply</a>
-                  </div>
-                </div><a class="btn btn-translucent-primary d-block w-100" href="#comment-form" data-bs-toggle="collapse">Join the conversation</a>
-                <!-- Comment form-->
-                <div class="collapse" id="comment-form">
-                  <form class="needs-validation bg-light rounded-3 shadow p-4 p-lg-5 mt-4" novalidate>
-                    <div class="row">
-                      <div class="col-sm-6 mb-3">
-                        <label class="form-label" for="com-name">Your name<sup class="text-danger ms-1">*</sup></label>
-                        <input class="form-control" type="text" id="com-name" placeholder="Enter your name" required>
-                        <div class="invalid-feedback">Please enter your name.</div>
-                        <div class="valid-feedback">Looks good!</div>
-                      </div>
-                      <div class="col-sm-6 mb-3">
-                        <label class="form-label" for="com-email">Email address<sup class="text-danger ms-1">*</sup></label>
-                        <input class="form-control" type="email" id="com-email" placeholder="Enter your email" required>
-                        <div class="invalid-feedback">Please provide a vild email address.</div>
-                        <div class="valid-feedback">Looks good!</div>
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="com-text">Comment<sup class="text-danger ms-1">*</sup></label>
-                      <textarea class="form-control" id="com-text" rows="6" placeholder="Write your comment here" required></textarea>
-                      <div class="invalid-feedback">Please write your comment.</div>
-                      <div class="valid-feedback">Looks good!</div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Post comment</button>
-                  </form>
-                </div>
-              </div>
+              
               <!-- Related posts (carousel)-->
               <div class="pb-4 pb-md-5">
                 <h2 class="h3 pb-4">Related posts</h2>

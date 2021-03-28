@@ -2,7 +2,8 @@
 layout: post
 title:  "Lasagna"
 date:   2021-02-20 09:32:23 -0800
-categories: jekyll update
+categories: Healthy
+image: lasagna.jpg
 ---
 If the terms and conditions for distributing the Program except as disclosed pursuant to this License or a legal entity exercising rights under this License. Derivative Works in Source or Object form, provided that the following conditions are met: 
 
