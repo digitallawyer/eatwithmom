@@ -3,8 +3,20 @@ layout: post
 title:  "Vegan appetizers"
 date:   2020-08-10 09:32:23 -0800
 categories: Vegetarian
-image: vegan-appetizers.jpg
+image: waffles.jpg
 ---
-Het zand deeg kan je kopen : ook kruimeldeeg genoemd.
 
-All Recipient's rights under this Agreement are offered by that Contributor. Distribution Obligations. 3.1. Application of This License. This License represents the complete corresponding machine-readable source code and documentation, if any. Contributor with its distribution of this License.
+Ingredients:
+
+- 500g self-rising flour
+- 1/2 liter of milk
+- 6 eggs
+- 200g of sugar
+- 150g of butter
+- 10g of vanilla sugar
+
+Recipe: 
+
+Mix flour, milk and egg yolks together. Add melted butter, sugar, vanilla sugar. Beat egg whites until stiff and add.
+
+Bake until dough is light brown in a waffle iron. Serve the waffles on a heated plate.
