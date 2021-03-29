@@ -1,0 +1,274 @@
+---
+title: Eat with mom
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eat with mom | Tastes like home</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    {% include analytics.html %}
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      {% include navigation.html %}
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="container mb-3 my-md-0 py-2 py-md-2">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-7 order-md-1 order-2 text-md-start text-center">
+            <h1 class="display-4 mb-lg-4 mb-3">Tastes like home</h1>
+            <h2 class="mb-lg-5 mb-4 text-muted">The best recipes from moms<br>all around the world</h2>
+            <div class="text-nowrap"><a class="btn btn-translucent-info me-3" href="/recipes">Browse Recipes</a><a class="btn btn-outline-info" href="#modal-contact" data-bs-toggle="modal">Share a recipe</a></div>
+          </div>
+          <div class="col-lg-5 col-md-5 order-md-2 order-1 mb-md-0 mb-grid-gutter"><img src="assets/image.jpg" alt="Illustration"></div>
+        </div>
+      </section>
+      <!-- Featured recipes-->
+      <section class="container pt-5 mt-4 mt-sm-0 pt-sm-6 pt-md-7 pb-lg-7">
+        <h2 class="h1 text-center">Featured recipes</h2>
+        <!-- Carousel-->
+        <div class="tns-carousel-wrapper">
+          <!-- Carousel progress-->
+          <div class="tns-carousel-progress ms-auto mb-3">
+            <div class="text-sm text-muted text-center mb-2"><span class="tns-current-slide me-1"></span>of<span class="tns-total-slides ms-1"></span></div>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar"></div>
+            </div>
+          </div>
+          <div class="tns-carousel-inner" data-carousel-options="{&quot;nav&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16, &quot;controls&quot;: false},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16},&quot;991&quot;:{&quot;controls&quot;: true}}}">
+            <!-- Carousel item-->
+            <article class="pb-2"><a class="card h-100 border-0 shadow card-hover mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-end bg-success">Vegetarian</span>
+                <div class="card-img-top card-img-gradient"><img src="assets/img/featured-recipes/01.jpg" alt="Vegan Raw Seasoning Appetizers"><span class="card-floating-text text-light fw-medium">Discover this recipe<i class="ai-chevron-right fs-lg ms-1 mt-n1 align-middle"></i></span></div>
+                <div class="card-body">
+                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;Oct 8</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;3</span></div>
+                  <h3 class="h5 pt-1 mb-3">Vegan Raw Seasoning Appetizers</h3>
+                  <p class="fs-sm text-muted mb-2">10 min — 2-4 portions</p>
+                </div></a></article>
+            <!-- Carousel item-->
+            <article class="pb-2"><a class="card h-100 border-0 shadow card-hover mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-end bg-info">Soups</span>
+                <div class="card-img-top card-img-gradient"><img src="assets/img/featured-recipes/02.jpg" alt="Shrimp Soup With Chili"><span class="card-floating-text text-light fw-medium">Discover this recipe<i class="ai-chevron-right fs-lg ms-1 mt-n1 align-middle"></i></span></div>
+                <div class="card-body">
+                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;Sep 29</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;1</span></div>
+                  <h3 class="h5 pt-1 mb-3">Shrimp Soup With Chili</h3>
+                  <p class="fs-sm text-muted mb-2">35 min — 2-4 portions</p>
+                </div></a></article>
+            <!-- Carousel item-->
+            <article class="pb-2"><a class="card h-100 border-0 shadow card-hover mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-end bg-warning">Desserts</span>
+                <div class="card-img-top card-img-gradient"><img src="assets/img/featured-recipes/03.jpg" alt="Healthy Dessert With Nuts &amp;amp; Berries"><span class="card-floating-text text-light fw-medium">Discover this recipe<i class="ai-chevron-right fs-lg ms-1 mt-n1 align-middle"></i></span></div>
+                <div class="card-body">
+                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;Sep 12</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;4</span></div>
+                  <h3 class="h5 pt-1 mb-3">Healthy Dessert With Nuts &amp; Berries</h3>
+                  <p class="fs-sm text-muted mb-2">15 min — 6-8 portions</p>
+                </div></a></article>
+            <!-- Carousel item-->
+            <article class="pb-2"><a class="card h-100 border-0 shadow card-hover mx-1" href="#"><span class="badge badge-lg badge-floating badge-floating-end bg-warning">Desserts</span>
+                <div class="card-img-top card-img-gradient"><img src="assets/img/featured-recipes/04.jpg" alt="Fluffy American pancakes"><span class="card-floating-text text-light fw-medium">Discover this recipe<i class="ai-chevron-right fs-lg ms-1 mt-n1 align-middle"></i></span></div>
+                <div class="card-body">
+                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;Nov 4</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;2</span></div>
+                  <h3 class="h5 pt-1 mb-3">Fluffy American pancakes</h3>
+                  <p class="fs-sm text-muted mb-2">10 min — 3-6 portions</p>
+                </div></a></article>
+          </div>
+        </div>
+      </section>
+      <!-- Book-->
+      <section class="container" id="book">
+        <div class="row mx-0 rounded-3 overflow-hidden" style="background-color: #f3f3f9;">
+          <div class="col-lg-6" style="background-color: #f4f4f6;">
+            <div class="d-flex align-items-start flex-sm-row flex-column py-lg-2 py-5 px-sm-5 px-4"><img class="me-sm-5 ms-sm-0 mx-auto mb-sm-0 mb-4 py-5" src="assets/image.jpg" width="150" alt="New recipes book">
+              <div class="align-self-center ps-2 text-sm-start text-center">
+                <h2 class="mb-4">The best foods, made by mom</h2><a class="btn btn-info" href="/recipes"></i>Browse recipes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center bg-faded-info">
+            <div class="w-100 py-lg-2 py-5 px-sm-5 px-4">
+              <h2 class="mb-2 text-center">Subscribe to the newsletter</h2>
+              <h6 class="mb-4 pb-2 fw-normal text-center">The latest recipes and stories from moms around the world!</h6>
+              <!-- Form subscribe-->
+              <form class="input-group mx-auto" style="max-width: 600px;">
+                <input class="form-control" type="email" placeholder="Enter your email" required>
+                <button class="btn btn-success" type="submit"><i class="ai-send fs-xl"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Categories-->
+      <section class="container py-5 my-4 my-sm-0 py-sm-6 py-md-7">
+        <h2 class="h1 mb-4 pb-3 text-center">Popular categories</h2>
+        <div class="pb-4" data-simplebar data-simplebar-auto-hide="false">
+          <div class="d-flex justify-content-between"><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/01.svg" alt="Healthy" style="max-width: 80px;">
+              <p class="mb-0 text-center">Healthy</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/02.svg" alt="Desserts" style="max-width: 80px;">
+              <p class="mb-0 text-center">Desserts</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/03.svg" alt="Vegetarian" style="max-width: 80px;">
+              <p class="mb-0 text-center">Vegetarian</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/04.svg" alt="Seafood" style="max-width: 80px;">
+              <p class="mb-0 text-center">Seafood</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/05.svg" alt="Bakery" style="max-width: 80px;">
+              <p class="mb-0 text-center">Bakery</p></a><a class="nav-link-style" href="#" style="min-width: 120px;"><img class="d-block mx-auto mb-4" src="assets/img/categories/06.svg" alt="Soups" style="max-width: 80px;">
+              <p class="mb-0 text-center">Soups</p></a></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-dark pt-5 pt-md-6">
+      <div class="container pt-3 pb-0 pt-md-0 pb-md-3">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="widget widget-light pb-2 mb-4">
+              <h4 class="widget-title">Contacts</h4>
+              <ul>
+                <li><a class="widget-link" href="mailto:support@example.com"><i class="ai-mail fs-lg me-2"></i>info@eatwithmom.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget widget-light pb-2 mb-4">
+              <h4 class="widget-title">Follow</h4><a class="btn-social bs-outline bs-lg bs-light bs-facebook me-2" href="#"><i class="ai-facebook"></i></a><a class="btn-social bs-outline bs-lg bs-light bs-twitter me-2" href="#"><i class="ai-twitter"></i></a><a class="btn-social bs-outline bs-lg bs-light bs-instagram me-2" href="#"><i class="ai-instagram"></i></a><a class="btn-social bs-outline bs-lg bs-light bs-pinterest" href="#"><i class="ai-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget widget-light pb-3 mb-4">
+              <h4 class="widget-title">Subscribe and never miss a post!</h4>
+              <form class="subscription-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                <div class="input-group flex-nowrap"><i class="ai-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
+                  <input class="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                  <button class="btn btn-info" type="submit" name="subscribe">Subscribe*</button>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+                </div>
+                <div class="form-text">*Subscribe to our newsletter to receive the latest recipes and stories from moms around the world.</div>
+                <div class="subscription-status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="fs-sm mb-3 order-md-1"><span class="text-light opacity-50 me-1">&copy; All rights reserved. Theme by</span><a class="nav-link-style nav-link-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
