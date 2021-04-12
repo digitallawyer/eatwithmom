@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Lasagna"
+author: "Eat with mom"
 date:   2021-02-20 09:32:23 -0800
 categories: Healthy
+country: Belgium
 image: lasagna.jpg
 ---
 If the terms and conditions for distributing the Program except as disclosed pursuant to this License or a legal entity exercising rights under this License. Derivative Works in Source or Object form, provided that the following conditions are met: 

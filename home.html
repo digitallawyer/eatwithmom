@@ -6,7 +6,7 @@ title: Eat with mom
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home| Eat with mom</title>
+    <title>Home | Eat with mom</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Around - Multipurpose Bootstrap Template">
     <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
@@ -109,6 +109,7 @@ title: Eat with mom
     <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/variables.css">
   </head>
   <!-- Body-->
   <body>
@@ -149,10 +150,10 @@ title: Eat with mom
               {% for post in site.posts %}
                 <article class="pb-2">
                     <a href="{{ post.url }}" class="card h-100 border-0 shadow card-hover mx-1">
-                      <span class="badge badge-lg badge-floating badge-floating-end bg-success">{{ post.categories }}</span>
+                      <span class="badge badge-lg badge-floating badge-floating-end bg-{{ post.categories }}">{{ post.categories }}</span>
                       <div class="card-img-top card-img-gradient"><img src="assets/img/posts/{{ post.image }}"><span class="card-floating-text text-light fw-medium">Discover this recipe<i class="ai-chevron-right fs-lg ms-1 mt-n1 align-middle"></i></span></div>
                     <div class="card-body">
-                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;{{ post.date | date: "%-d %b %Y" }}</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;3</span></div>
+                  <div class="mb-3 text-nowrap"><span class="meta-link fs-xs"><i class="ai-calendar me-1 mt-n1"></i>&nbsp;{{ post.date | date: "%-d %b %Y" }}</span><span class="meta-divider"></span><span class="meta-link fs-xs"><i class="ai-message-square me-1"></i>&nbsp;{{ post.country }}</span></div>
                   <h3 class="h5 pt-1 mb-3">{{ post.title }}</h3>
                   <p class="fs-sm text-muted mb-2">10 min — 2-4 portions</p>
                 </div></a></article>

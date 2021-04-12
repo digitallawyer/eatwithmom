@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Omgekeerde appeltaart"
+author: "Eat with mom"
 date:   2021-02-21 09:32:23 -0800
 categories: Desserts
+country: Belgium
 image: appeltaart.jpg
 ---
 Het zand deeg kan je kopen : ook kruimeldeeg genoemd.

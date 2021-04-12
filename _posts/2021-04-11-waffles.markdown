@@ -1,8 +1,25 @@
 ---
 layout: post
-title:  "Waffles"
+title:  "Waffles (Minuutwafels)"
+author: "Eat with mom"
 date:   2021-04-11 09:32:23 -0800
 categories: Desserts
+country: Belgium
 image: waffles.jpg
 ---
-Minuutwafels!
+
+Originally from a cookbook distributed by the Belgian Woman Farmers Union (De Boerinnenbond), this easy and fast waffle recipe has always been a staple at our home.
+
+
+**Ingredients**
+
+* 500g self rising flour
+* 1/2l milk
+* 6 eggs
+* 200g sugar
+* 150g butter
+* 2 packets of vanilla sugar
+
+**Preparation**
+
+Mix flour, milk and egg yolk. Add the melted butter, the sugar, the vanilla sugar and finally the stiffened egg whites. Bake the dough in a waffle iron until it is light brown. The waffles can be served with whipped cream, in which case you can lower the amount of sugar in the dough.
