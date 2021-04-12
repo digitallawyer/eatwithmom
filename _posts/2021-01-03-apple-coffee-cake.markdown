@@ -2,7 +2,7 @@
 layout: post
 title:  "Apple Coffee Cake"
 author: "Eat with mom"
-date:   2021-02-21 09:32:23 -0800
+date:   2021-01-03 04:20:00 -0800
 categories: Desserts
 country: Canada
 image: apple-coffee-cake.jpg
@@ -27,10 +27,10 @@ This recipe was shared by my friend Phil Brown from Canada. It's a recipe from h
 
 **Preparation**
 
-Preheat oven to 350F
-Combine first 5 ingredients
-Add milk, egg and vanilla, stir, just enough to moisten.
-Pour into 8x8 pan or other
-Push apple slices into batter
-Sprinkle with topping
-Bake 50 to 60 minutes
+* Preheat oven to 350F
+* Combine first 5 ingredients
+* Add milk, egg and vanilla, stir, just enough to moisten.
+* Pour into 8x8 pan or other
+* Push apple slices into batter
+* Sprinkle with topping
+* Bake 50 to 60 minutes

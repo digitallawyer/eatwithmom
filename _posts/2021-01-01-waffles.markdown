@@ -6,7 +6,7 @@ date:   2021-01-01 04:20:00 -0800
 categories: Desserts
 country: Belgium
 image: waffles.jpg
-featured: true
+featured: false
 ---
 
 Originally from a cookbook distributed by the Belgian Woman Farmers Union (De Boerinnenbond), this easy and fast waffle recipe has always been a staple at our home.
