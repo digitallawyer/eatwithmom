@@ -141,7 +141,7 @@
                       <div class="ps-2">
                         <h6 class="nav-heading mb-1"><a href="#">{{ page.author }}</a></h6>
                         <div class="text-nowrap">
-                          <div class="meta-link fs-xs"><i class="ai-calendar me-1 align-vertical"></i>&nbsp;Feb 19</div><span class="meta-divider"></span><a class="meta-link fs-xs" href="#comments" data-scroll><i class="ai-message-square me-1 align-vertical"></i>&nbsp;3</a>
+                          <div class="meta-link fs-xs"><i class="ai-calendar me-1 align-vertical"></i>&nbsp;{{ page.date | date: "%b %-d %Y" }}</div><span class="meta-divider"></span><span class="meta-link fs-xs"><img src="/assets/img/countries/{{ page.country }}.svg" width="16px"></i>&nbsp;{{ page.country }}</span>
                         </div>
                       </div>
                     </div>
